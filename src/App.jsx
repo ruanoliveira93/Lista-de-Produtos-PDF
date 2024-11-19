@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './app.module.scss'
 import jsPDF from "jspdf";
 import "jspdf-autotable"
 
@@ -70,7 +70,7 @@ function App() {
   };
 
   return (  
-      <div>
+      <section>
         
         <fieldset id='caixa-inserir'>
           <label htmlFor="codigo">Código:</label>
@@ -114,7 +114,7 @@ function App() {
             <button type='button' onClick={generatePDF}>Gerar PDF</button>
             </section>
 
-      </div>
+      </section>
   );
 };
 
