@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
-import './app.module.scss'
+import './App.module.scss'
 import jsPDF from "jspdf";
-import "jspdf-autotable"
+import "jspdf-autotable";
 
 function App() {
 

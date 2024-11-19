@@ -13,11 +13,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-$primary-color: #646cff;
-$secundary-color: #535bf2;
-$light-color: #fff;
-$dark-color: #1a1a1a;
-
 html {
     min-height: 100vh;
 }
@@ -45,7 +40,7 @@ fieldset {
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    border: 1px solid $light-color;
+    border: 1px solid #fff;
     border-radius: 6px;
     width: 300px;
     height: 380px;
@@ -65,7 +60,7 @@ input {
     font-size: 1em;
     font-weight: 400;
     font-family: inherit;
-    background-color: $dark-color;
+    background-color: #1a1a1a;
     transition: border-color 0.25s;
 
 }
@@ -85,19 +80,19 @@ input:focus-visible {
 
 @keyframes campo-inserir {
     20% {
-        border-bottom: 1px solid $primary-color;
+        border-bottom: 1px solid #646cff;
     }
 
     40% {
-        border-left: 1px solid $primary-color;
+        border-left: 1px solid #646cff;
     }
 
     60% {
-        border-top: 1px solid $primary-color;
+        border-top: 1px solid #646cff;
     }
 
     90% {
-        border-right: 1px solid $primary-color;
+        border-right: 1px solid #646cff;
     }
 }
 
@@ -115,13 +110,14 @@ table {
     border: 1px solid white;
     width: 100%;
     border-radius: 2px;
-    
-    tr, th, td {
-        border: 1px solid white;
-        text-align: center;
-    }
 }
 
+tr,
+th,
+td {
+    border: 1px solid white;
+    text-align: center;
+}
 
 button {
     border-radius: 8px;
@@ -149,27 +145,27 @@ button:focus-visible {
 
 #pdf {
     margin-top: 50px;
-    
-    h1 {
-        font-size: 3.2em;
-        line-height: 1.1;
-    }
-    
-    button {
-        border-radius: 8px;
-        border: 1px solid transparent;
-        padding: 0.6em 1.2em;
-        font-size: 1em;
-        font-weight: 500;
-        font-family: inherit;
-        background-color: #1a1a1a;
-        cursor: pointer;
-        transition: border-color 0.25s;
-    }
-    
-    button:hover {
-        border-color: #646cff;
-    }
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
 }
 
 @media (prefers-color-scheme: light) {
