@@ -3,8 +3,7 @@ import './App.css'
 import jsPDF from "jspdf";
 import "jspdf-autotable";
 
-function App() {
-
+export default function App() {
   // Cria um estado para cada elemento
   const [codigo, setCodigo] = useState('');
   const [produto, setProduto] = useState('');
@@ -116,5 +115,3 @@ function App() {
     </section>
   );
 };
-
-export default App
